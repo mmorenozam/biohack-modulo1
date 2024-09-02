@@ -8,6 +8,8 @@
 #   - name: Mauricio Moreno, PhD
 logo: images/icon1_nb.png
 lang: es
+filters:
+  - timer
 format: 
   letterbox-revealjs:
     theme: custom.scss
@@ -24,6 +26,7 @@ format:
       buttons: false
     revealjs-plugins:
       - pointer
+      
 callout-appearance: simple
 ---
 
@@ -32,7 +35,7 @@ callout-appearance: simple
 ::: columns
 ::: {.column width="37.5%"}
 
-![](images/icon1_nb.png){style="margin-left:-70px"}
+![](images/icon1_nb.png){style="margin-left:-40px"}
 
 :::
 ::: {.column width="60%"}
@@ -777,13 +780,11 @@ help(package = "ggplot2")
 :::
 
 
-
-
-
-::: {.callout-link}
-
-
+:::{.timer #Timer1 seconds=150 starton=interaction}
 :::
+
+
+
 
 :::
 :::
@@ -1097,14 +1098,15 @@ ej_lista[[2]]
 [Ejercicios 1.2](https://mmorenozam.github.io/biohack-website/ejercicios_m1.html#ejercicios-1.2){target="_blank"}
 :::
 
-
-
-
-
-::: {.callout-link}
-
+:::{.timer #Timer2 seconds=240 starton=interaction}
+:::
 
 :::
+
+
+
+
+
 
 :::
 :::
@@ -1269,13 +1271,10 @@ sd(mtcars$mpg)/mean(mtcars$mpg)
 :::
 
 
-
-
-
-::: {.callout-link}
-
-
+:::{.timer #Timer3 seconds=150 starton=interaction}
 :::
+
+
 
 :::
 :::

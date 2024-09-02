@@ -403,7 +403,7 @@
     "href": "biohack-modulo1.html#section-2",
     "title": "biohack-modulo1",
     "section": "",
-    "text": "Ejercicios 1.2"
+    "text": "Ejercicios 1.2\n\n                    \n                    \n                \n\n:::"
   },
   {
     "objectID": "biohack-modulo1.html#introducción-1",
@@ -537,5 +537,68 @@
     "title": "biohack-modulo1",
     "section": "Funciones y librerías importantes de esta sesión",
     "text": "Funciones y librerías importantes de esta sesión\nFunciones\n\n\ndata.frame nos permite crear una tabla de datos de manera manual.\nstr nos sirve para acceder a la información del tipo de datos contenidos en un objeto de R.\ninstall.packages nos permite instalar paquetes de CRAN en R.\nlibrary nos permite invocar/llamar una librería de R.\n? y help son comandos de ayuda de R.\nfactor nos permite especificar cuando una variable debe ser reconocida como factor y el orden de sus niveles.\nas.numeric, as.character y as.Date transforman valores a numéricos, caracteres y fechas.\nLas funciones mean, sd, var, median y quantile calculan la media aritmética, la desviación estándar, la varianza, la mediana y cuartiles respectivamente.\nattach convierte internamente las columnas de una tabla en objetos para su agilitar su accesibilidad.\ndettach revierte a attach.\n\n\n\nLibrerias\n\n\nmodeest funciones para estimar la moda de una distribución.\n\nmlv función para estimación de la moda de datos continuos.\n\npalmerpenguins datos correspondientes a la investigación de la Dra. Kristen Gorman acerca de pingüinos de la Antártida.\ntidycomm funciones para calcular estadísticos descriptivos.\n\ndescribe crea una tabla de estadísticos descriptivos para variables continuas.\ndescribe_cat crea una tabla de estadísticos descriptivos para variables categóricas.\n\nfdth funciones para crear tablas de frecuencias.\n\nfdt_cat crea una tabla de frecuencia para variables categóricas.\nfdt categoriza una variable continua para crear una tabla de frecuencias.\n\nflextable paquete con funciones para dar formato a tablas y exportarlas a otros tipos de documentos (.docx, .pdf)\n\nflextable principal función para dar formato a una tabla"
+  },
+  {
+    "objectID": "timer_test.html#extension",
+    "href": "timer_test.html#extension",
+    "title": "Quarto Timer",
+    "section": "Extension",
+    "text": "Extension\nThis extension provides two methods to add timers to your slides.\n\nJavaScript\nLUA\n\nThis might be helpful, if, for example, you want your audience to think about a specific topic for 5 minutes."
+  },
+  {
+    "objectID": "timer_test.html#installation",
+    "href": "timer_test.html#installation",
+    "title": "Quarto Timer",
+    "section": "Installation",
+    "text": "Installation\nIn RStudio terminal enter the following to download and add extension to the current project:\n$ quarto add produnis/quarto-timer\n \nGo ahead and do it now. You have 15 seconds."
+  },
+  {
+    "objectID": "timer_test.html#javascript-and-lua-usage",
+    "href": "timer_test.html#javascript-and-lua-usage",
+    "title": "Quarto Timer",
+    "section": "JavaScript and LUA usage",
+    "text": "JavaScript and LUA usage\nFollowing installation you can embed timers into pages in two ways.\n\nJavaScript\nLUA\n\nUsing LUA is generally cleaner in markdown but both methods will be shown."
+  },
+  {
+    "objectID": "timer_test.html#customization",
+    "href": "timer_test.html#customization",
+    "title": "Quarto Timer",
+    "section": "Customization",
+    "text": "Customization\nYou can change two features of timers individually:\n\nHow long they will last\nWhen they will be active:\n\nFrom the start of a presentation\nWhen the slide is visible\nOn interaction, clicking on the timer"
+  },
+  {
+    "objectID": "timer_test.html#javascript-usage",
+    "href": "timer_test.html#javascript-usage",
+    "title": "Quarto Timer",
+    "section": "JavaScript usage",
+    "text": "JavaScript usage\nTo add a timer, add the code snippet into your qmd file:\n&lt;div id=\"UNIQUE-ID\"&gt;&lt;/div&gt;\n&lt;script src=\"_extensions/timer/timer.js\"&gt;&lt;/script&gt;\n&lt;script&gt;\n    document.addEventListener(\"DOMContentLoaded\", function () {\n        initializeTimer(\"UNIQUE-ID\", SECONDS, STARTON); \n    });\n&lt;/script&gt;\nCustomize the UNIQUE-ID, SECONDS, and STARTON, as below:\n&lt;div id=\"Timer0\"&gt;&lt;/div&gt;\n&lt;script src=\"_extensions/timer/timer.js\"&gt;&lt;/script&gt;\n&lt;script&gt;\n    document.addEventListener(\"DOMContentLoaded\", function () {\n        initializeTimer(\"Timer0\", 60, \"slide\"); \n    });\n&lt;/script&gt;"
+  },
+  {
+    "objectID": "timer_test.html#javascript-usage-1",
+    "href": "timer_test.html#javascript-usage-1",
+    "title": "Quarto Timer",
+    "section": "JavaScript usage",
+    "text": "JavaScript usage\nHere’s a working JavaScript example, added with the following code:\n&lt;div id=\"Timer1\"&gt;&lt;/div&gt;\n&lt;script src=\"_extensions/timer/timer.js\"&gt;&lt;/script&gt;\n&lt;script&gt;\n    document.addEventListener(\"DOMContentLoaded\", function () {\n        initializeTimer(\"Timer1\", 240, \"presentation\"); \n    });\n&lt;/script&gt;\n\n\n\n\n\nThis timer started when the presentation started and lasts 4 minutes (240 seconds)."
+  },
+  {
+    "objectID": "timer_test.html#lua-usage",
+    "href": "timer_test.html#lua-usage",
+    "title": "Quarto Timer",
+    "section": "LUA usage",
+    "text": "LUA usage\nAdding a timer with LUA takes the following form:\n::: {.timer #UNIQUE-ID seconds=300 starton=slide}\n:::\nCustomize the UNIQUE-ID and set the seconds and starton.\nNOTE: starton can have the values:\n\npresentation\nslide\ninteraction"
+  },
+  {
+    "objectID": "timer_test.html#lua-example",
+    "href": "timer_test.html#lua-example",
+    "title": "Quarto Timer",
+    "section": "LUA example",
+    "text": "LUA example\nThe default timer can be as simple as the following:\n::: {.timer #Timer2}\n:::\nAppearing as the following:\n                    \n                    \n                \nThe default is 5 minutes (300 seconds) and active only when the slide is in focus."
+  },
+  {
+    "objectID": "timer_test.html#more-lua-examples",
+    "href": "timer_test.html#more-lua-examples",
+    "title": "Quarto Timer",
+    "section": "More LUA examples",
+    "text": "More LUA examples\nYou can use as many timers on your slides as you want, as long as a unique UNIQUE-ID is used for each.\n::: {.timer #Timer3 seconds=60}\n:::\n::: {.timer #Timer4 seconds=60 starton=presentation}\n:::\n::: {.timer #Timer5 seconds=60 starton=interaction}\n:::"
   }
 ]
