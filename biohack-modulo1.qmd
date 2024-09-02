@@ -13,7 +13,7 @@ format:
     theme: custom.scss
     progress: false
     menu: true
-    width: 1500
+    width: 1400
     height: 720
     slide-number: true
     preview-links: auto
