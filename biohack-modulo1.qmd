@@ -27,7 +27,7 @@ format:
     revealjs-plugins:
       - pointer
       
-callout-appearance: simple
+# callout-appearance: simple
 ---
 
 ## {}
@@ -49,17 +49,12 @@ Módulo 1: Generalidades e Introducción a R
 Mauricio Moreno, PhD
 
 
-::: {.callout-link}
-
-
-:::
-
 :::
 :::
 
 ![](images/becomes-co-s_FHDDSVp1s-unsplash.jpg){.image-left}
 
-<!-- Photo by <a href="https://unsplash.com/@becomes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Becomes Co</a> on <a href="https://unsplash.com/photos/2-men-sitting-on-black-office-rolling-chairs-s_FHDDSVp1s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+
 
 
 ## ¡Conozcámonos!
@@ -148,9 +143,9 @@ Ingresa al menti [haciendo click aquí](https://www.menti.com/al9tta2eux8r){targ
 
     -   Gráficos listos para publicación.
 
-    -   Generación de reportes, páginas web, presentaciones y libros en distintos formatos (rmarkdown, blogdown, quarto).
+    -   Generación de reportes, páginas web, presentaciones y libros en distintos formatos (`{rmarkdown}`, `{blogdown}`, Quarto).
 
-    -   Construcción de aplicaciones interactivas para visualización/análisis de datos (rshiny).
+    -   Construcción de aplicaciones interactivas para visualización/análisis de datos (`{rshiny}`).
 
 -   A continuación, algunos ejemplos de la versatilidad de R.
 :::
@@ -403,7 +398,7 @@ una variable <- 2
 | División       |   `/`    | `12 / 3` |    `4`    |
 | Potencia       |   `^`    | `5 ^ 2`  |   `25`    |
 
--   Existen otros operadores, como el de "cascada" o *pipeline operator* (en tidyverse: `%>%`, en R base: `|>`), que usaremos más adelante
+-   Existen otros operadores, como el de "cascada" o *pipeline operator* (en `{tidyverse}`: `%>%`, en R base: `|>`), que usaremos más adelante
 
 ## Operadores Booleanos de comparación
 
@@ -578,7 +573,7 @@ matriz
 ::: incremental
 -   Pero entonces, ¿por qué molestarnos con matrices?
 
-    -   Para un usuario principiante, no hace mayor diferencia, a menos que llegue a hacer uso de paquetes de R que requieren que los datos estén en forma matricial (un ejemplo es la librería para gráficos `lattice`).
+    -   Para un usuario principiante, no hace mayor diferencia, a menos que llegue a hacer uso de paquetes de R que requieren que los datos estén en forma matricial (un ejemplo es la librería para gráficos `{lattice}`).
 
     -   Para un usuario avanzado, la mayor ventaja de tener los datos en forma matricial es que iterar y realizar computaciones sobre estas es más rápido (técnica común en lo que se conoce como ***low-level programming***). Esto, en modelos que requieren bastas cantidades de datos (por ejemplo, ***data mining*** o ***natural language processing***) conlleva a una mayor eficiencia en obtener resultados en tareas de identificación de patrones.
 :::
@@ -630,7 +625,7 @@ str(matriz)
 
 -   Existen dos tipos de paquetes:
 
-    -   Paquetes de base (instalados como librerías estándar de R, ejemplos: `utils` y `base`)
+    -   Paquetes de base (instalados como librerías estándar de R, ejemplos: `{utils}` y `{base}`)
 
     -   Paquetes de terceras partes (o externos, todos aquellos disponibles en CRAN)
 :::
@@ -683,7 +678,7 @@ library(ggplot2)
 
 ## Instalación de Rtools (opcional) {.smaller}
 
-Seguramente a muchos de ustedes al instalar el `tidyverse`, les apareció un mensaje como el siguiente: 
+Seguramente a muchos de ustedes al instalar el `{tidyverse}`, les apareció un mensaje como el siguiente: 
 
 ![](images/warning.png)
 
@@ -702,7 +697,7 @@ Seguramente a muchos de ustedes al instalar el `tidyverse`, les apareció un men
 
     -   Compilación de versiones beta de librerías experimentales aún no disponibles en CRAN.
 
-    -   Uso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. rstan)
+    -   Uso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. `{rstan}`)
 
 -   En caso de que desees instalar Rtools, sigue las instrucciones en este link [https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/){target="_blank"}
 :::
@@ -964,7 +959,7 @@ str(variable_factor_2)
 
 -   Por tanto, no existe una solución única. Aquí abarcaremos el caso más sencillo en que el formato es YYYY-MM-DD.
 
--   La función base `as.Date` abarca una gran diversidad de capacidades para transformar fechas. Sin embargo, su uso puede resultar un poco confuso. En caso de que necesites una solución más específica, recomiendo el paquete `lubridate` del conjunto de paquetes `tidyverse`.
+-   La función base `as.Date` abarca una gran diversidad de capacidades para transformar fechas. Sin embargo, su uso puede resultar un poco confuso. En caso de que necesites una solución más específica, recomiendo el paquete `{lubridate}` del conjunto de paquetes `{tidyverse}`.
 :::
 
 . . .
@@ -1287,7 +1282,7 @@ sd(mtcars$mpg)/mean(mtcars$mpg)
 ::: {.column .fragment width="80%"}
 Para ilustrar esta sección, utilizaremos la base de datos de "Palmer penguins":
 
--   Los datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr. Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería `palmerpenguins`.
+-   Los datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr. Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería `{palmerpenguins}`.
 
 ![](images/penguins.png){fig-align="center" width="400"}
 :::
@@ -1317,7 +1312,7 @@ summary(penguins)
 ::: incremental
 -   Usar la función `summary` resulta útil para hacer chequeos sobre la marcha.
 
--   Para obtener una tabla de estadísticos descriptivos más útil en términos de presentación de resultados, usaremos básicamente dos funciones del paquete `tidycomm`
+-   Para obtener una tabla de estadísticos descriptivos más útil en términos de presentación de resultados, usaremos básicamente dos funciones del paquete `{tidycomm}`
 
     -   `describe`: para generar tablas de estadísticos descriptivos de variables cuantitativas
 
@@ -1438,7 +1433,7 @@ tabla_frec2
 ```
 
 ::: incremental
--   La librería `fdth` categoriza una variable continua en base a tres distintos algoritmos. El "default" es el algoritmo "Sturges" (ver `?fdth` para más información).
+-   La librería `{fdth}` categoriza una variable continua en base a tres distintos algoritmos. El "default" es el algoritmo "Sturges" (ver `?fdth` para más información).
 :::
 
 ## ¿Cómo exporto mis tablas?
@@ -1463,6 +1458,37 @@ detach(penguins) # IMPORTANTISIMO!
 
 ![](images/tabla_word.png){fig-align="center"}
 
+## {}
+
+::: columns
+::: {.column width="60%"}
+
+::: {.title data-id="title"}
+Fin del módulo 1
+:::
+
+::: {.callout-tip}
+## Créditos de fotos
+
+Portada por <a href="https://unsplash.com/@becomes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Becomes Co</a> en <a href="https://unsplash.com/photos/2-men-sitting-on-black-office-rolling-chairs-s_FHDDSVp1s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Foto final por <a href="https://unsplash.com/@wolfgang_hasselmann?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wolfgang Hasselmann</a> en <a href="https://unsplash.com/photos/dandelion-flower-under-golden-hour-Kovuf0yU8NU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+Resto de fotos: Varias fuentes
+:::
+
+:::
+
+::: {.column width="37.5%"}
+
+![](images/icon1_nb.png){style="margin-left:125px"}
+
+
+:::
+:::
+
+![](images/wolfgang-hasselmann-Kovuf0yU8NU-unsplash.jpg){.image-right}
+
 <!-- ## Autoevaluación {.smaller} -->
 
 <!-- Carga los datos de base `iris` y aparea los siguientes literales -->
@@ -1481,61 +1507,61 @@ detach(penguins) # IMPORTANTISIMO!
 <!-- | f\) Frecuencia acumulada hasta especie `versicolor` | f\) 0.762     | -->
 <!-- +-----------------------------------------------------+---------------+ -->
 
-# Antes de terminar este módulo...
+<!-- # Antes de terminar este módulo... -->
 
-## Funciones y librerías importantes de esta sesión {.smaller .scrollable}
+<!-- ## Funciones y librerías importantes de esta sesión {.smaller .scrollable} -->
 
-**Funciones**
+<!-- **Funciones** -->
 
-::: incremental
--   `data.frame` nos permite crear una tabla de datos de manera manual.
+<!-- ::: incremental -->
+<!-- -   `data.frame` nos permite crear una tabla de datos de manera manual. -->
 
--   `str` nos sirve para acceder a la información del tipo de datos contenidos en un objeto de R.
+<!-- -   `str` nos sirve para acceder a la información del tipo de datos contenidos en un objeto de R. -->
 
--   `install.packages` nos permite instalar paquetes de CRAN en R.
+<!-- -   `install.packages` nos permite instalar paquetes de CRAN en R. -->
 
--   `library` nos permite invocar/llamar una librería de R.
+<!-- -   `library` nos permite invocar/llamar una librería de R. -->
 
--   `?` y `help` son comandos de ayuda de R.
+<!-- -   `?` y `help` son comandos de ayuda de R. -->
 
--   `factor` nos permite especificar cuando una variable debe ser reconocida como factor y el orden de sus niveles.
+<!-- -   `factor` nos permite especificar cuando una variable debe ser reconocida como factor y el orden de sus niveles. -->
 
--   `as.numeric`, `as.character` y `as.Date` transforman valores a numéricos, caracteres y fechas.
+<!-- -   `as.numeric`, `as.character` y `as.Date` transforman valores a numéricos, caracteres y fechas. -->
 
--   Las funciones `mean`, `sd`, `var`, `median` y `quantile` calculan la media aritmética, la desviación estándar, la varianza, la mediana y cuartiles respectivamente.
+<!-- -   Las funciones `mean`, `sd`, `var`, `median` y `quantile` calculan la media aritmética, la desviación estándar, la varianza, la mediana y cuartiles respectivamente. -->
 
--   `attach` convierte internamente las columnas de una tabla en objetos para su agilitar su accesibilidad.
+<!-- -   `attach` convierte internamente las columnas de una tabla en objetos para su agilitar su accesibilidad. -->
 
--   `dettach` revierte a `attach`.
-:::
+<!-- -   `dettach` revierte a `attach`. -->
+<!-- ::: -->
 
-. . .
+<!-- . . . -->
 
-**Librerias**
+<!-- **Librerias** -->
 
-::: incremental
--   `modeest` funciones para estimar la moda de una distribución.
+<!-- ::: incremental -->
+<!-- -   `modeest` funciones para estimar la moda de una distribución. -->
 
-    -   `mlv` función para estimación de la moda de datos continuos.
+<!--     -   `mlv` función para estimación de la moda de datos continuos. -->
 
--   `palmerpenguins` datos correspondientes a la investigación de la Dra. Kristen Gorman acerca de pingüinos de la Antártida.
+<!-- -   `palmerpenguins` datos correspondientes a la investigación de la Dra. Kristen Gorman acerca de pingüinos de la Antártida. -->
 
--   `tidycomm` funciones para calcular estadísticos descriptivos.
+<!-- -   `tidycomm` funciones para calcular estadísticos descriptivos. -->
 
-    -   `describe` crea una tabla de estadísticos descriptivos para variables continuas.
+<!--     -   `describe` crea una tabla de estadísticos descriptivos para variables continuas. -->
 
-    -   `describe_cat` crea una tabla de estadísticos descriptivos para variables categóricas.
+<!--     -   `describe_cat` crea una tabla de estadísticos descriptivos para variables categóricas. -->
 
--   `fdth` funciones para crear tablas de frecuencias.
+<!-- -   `fdth` funciones para crear tablas de frecuencias. -->
 
-    -   `fdt_cat` crea una tabla de frecuencia para variables categóricas.
+<!--     -   `fdt_cat` crea una tabla de frecuencia para variables categóricas. -->
 
-    -   `fdt` categoriza una variable continua para crear una tabla de frecuencias.
+<!--     -   `fdt` categoriza una variable continua para crear una tabla de frecuencias. -->
 
--   `flextable` paquete con funciones para dar formato a tablas y exportarlas a otros tipos de documentos (.docx, .pdf)
+<!-- -   `flextable` paquete con funciones para dar formato a tablas y exportarlas a otros tipos de documentos (.docx, .pdf) -->
 
-    -   `flextable` principal función para dar formato a una tabla
-:::
+<!--     -   `flextable` principal función para dar formato a una tabla -->
+<!-- ::: -->
 
 <!-- ## Recomendaciones generales (i) {.smaller} -->
 

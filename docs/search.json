@@ -39,7 +39,7 @@
     "href": "biohack-modulo1.html#por-qué-r",
     "title": "biohack-modulo1",
     "section": "¿Por qué R?",
-    "text": "¿Por qué R?\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\nUso de R comparado con SAS, SPSS y JMP en Ecología (Tomado de Touchon y McCoy (2016), Ecosphere 7 (8))\n\n\n\n\n\n\n\n\nSu uso se va extendiendo cada vez más en el ámbito académico (e industrial).\nSoftware libre.\nAmplio abanico de paquetes/librerías (21201 al 01.09.2024).\n¡Basta comunidad de R enthusiasts!.\nVersátil:\n\nGráficos listos para publicación.\nGeneración de reportes, páginas web, presentaciones y libros en distintos formatos (rmarkdown, blogdown, quarto).\nConstrucción de aplicaciones interactivas para visualización/análisis de datos (rshiny).\n\nA continuación, algunos ejemplos de la versatilidad de R."
+    "text": "¿Por qué R?\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\nUso de R comparado con SAS, SPSS y JMP en Ecología (Tomado de Touchon y McCoy (2016), Ecosphere 7 (8))\n\n\n\n\n\n\n\n\nSu uso se va extendiendo cada vez más en el ámbito académico (e industrial).\nSoftware libre.\nAmplio abanico de paquetes/librerías (21201 al 01.09.2024).\n¡Basta comunidad de R enthusiasts!.\nVersátil:\n\nGráficos listos para publicación.\nGeneración de reportes, páginas web, presentaciones y libros en distintos formatos ({rmarkdown}, {blogdown}, Quarto).\nConstrucción de aplicaciones interactivas para visualización/análisis de datos ({rshiny}).\n\nA continuación, algunos ejemplos de la versatilidad de R."
   },
   {
     "objectID": "biohack-modulo1.html#gráficos-listos-para-publicación",
@@ -109,14 +109,14 @@
     "href": "biohack-modulo1.html#instalación-de-r",
     "title": "biohack-modulo1",
     "section": "Instalación de R",
-    "text": "Instalación de R\n\n\n\nIngresa a https://cran.r-project.org/bin/windows/base/\nDescarga la última versión disponible de R\nEjecuta el archivo .exe para iniciar la instalación\n\n\n\n\n\n\n\n\n\n\n\nRecomendado: No cambies el directorio sugerido por el asistente de instalación\nOpcional: No instalar traducciones de los mensajes de R"
+    "text": "Instalación de R\n\n\n\nIngresa a https://cran.r-project.org/bin/windows/base/\nDescarga la última versión disponible de R\nEjecuta el archivo .exe para iniciar la instalación\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nRecomendado: No cambies el directorio sugerido por el asistente de instalación\nOpcional: No instalar traducciones de los mensajes de R"
   },
   {
     "objectID": "biohack-modulo1.html#instalación-de-rstudio",
     "href": "biohack-modulo1.html#instalación-de-rstudio",
     "title": "biohack-modulo1",
     "section": "Instalación de RStudio",
-    "text": "Instalación de RStudio\n\n\nIngresa a https://posit.co/download/rstudio-desktop/#download\nClick en la opción de instalar “RStudio Desktop for Windows”\nEjecuta el archivo .exe para iniciar la instalación\n\n\n\n\n\n\n\n\n\nNo cambies las sugerencias pre-establecidas para la instalación\n\n\n\n\n\n\n\n\n\n\n\nEn el caso de tener una versión de R anterior a la previamente instalada, es probable que la primera vez que abramos RStudio, este nos pregunte que version queremos usar (recomendado usar la última versión de R)"
+    "text": "Instalación de RStudio\n\n\nIngresa a https://posit.co/download/rstudio-desktop/#download\nClick en la opción de instalar “RStudio Desktop for Windows”\nEjecuta el archivo .exe para iniciar la instalación\n\n\n\n\n\n\n\n\n\nTip\n\n\nNo cambies las sugerencias pre-establecidas para la instalación\n\n\n\n\n\n\n\n\n\n\n\nImportante\n\n\nEn el caso de tener una versión de R anterior a la previamente instalada, es probable que la primera vez que abramos RStudio, este nos pregunte que version queremos usar (recomendado usar la última versión de R)"
   },
   {
     "objectID": "biohack-modulo1.html#gui-rstudio",
@@ -158,7 +158,7 @@
     "href": "biohack-modulo1.html#operadores-básicos",
     "title": "biohack-modulo1",
     "section": "Operadores básicos",
-    "text": "Operadores básicos\n\n\n\nOperación\nOperador\nEjemplo\nResultado\n\n\n\n\nSuma\n+\n10 + 2\n12\n\n\nResta\n-\n6 - 3\n3\n\n\nMultiplicación\n*\n4 * 4\n16\n\n\nDivisión\n/\n12 / 3\n4\n\n\nPotencia\n^\n5 ^ 2\n25\n\n\n\n\nExisten otros operadores, como el de “cascada” o pipeline operator (en tidyverse: %&gt;%, en R base: |&gt;), que usaremos más adelante"
+    "text": "Operadores básicos\n\n\n\nOperación\nOperador\nEjemplo\nResultado\n\n\n\n\nSuma\n+\n10 + 2\n12\n\n\nResta\n-\n6 - 3\n3\n\n\nMultiplicación\n*\n4 * 4\n16\n\n\nDivisión\n/\n12 / 3\n4\n\n\nPotencia\n^\n5 ^ 2\n25\n\n\n\n\nExisten otros operadores, como el de “cascada” o pipeline operator (en {tidyverse}: %&gt;%, en R base: |&gt;), que usaremos más adelante"
   },
   {
     "objectID": "biohack-modulo1.html#operadores-booleanos-de-comparación",
@@ -235,7 +235,7 @@
     "href": "biohack-modulo1.html#matrices-2",
     "title": "biohack-modulo1",
     "section": "Matrices",
-    "text": "Matrices\n\n\nPero entonces, ¿por qué molestarnos con matrices?\n\nPara un usuario principiante, no hace mayor diferencia, a menos que llegue a hacer uso de paquetes de R que requieren que los datos estén en forma matricial (un ejemplo es la librería para gráficos lattice).\nPara un usuario avanzado, la mayor ventaja de tener los datos en forma matricial es que iterar y realizar computaciones sobre estas es más rápido (técnica común en lo que se conoce como low-level programming). Esto, en modelos que requieren bastas cantidades de datos (por ejemplo, data mining o natural language processing) conlleva a una mayor eficiencia en obtener resultados en tareas de identificación de patrones."
+    "text": "Matrices\n\n\nPero entonces, ¿por qué molestarnos con matrices?\n\nPara un usuario principiante, no hace mayor diferencia, a menos que llegue a hacer uso de paquetes de R que requieren que los datos estén en forma matricial (un ejemplo es la librería para gráficos {lattice}).\nPara un usuario avanzado, la mayor ventaja de tener los datos en forma matricial es que iterar y realizar computaciones sobre estas es más rápido (técnica común en lo que se conoce como low-level programming). Esto, en modelos que requieren bastas cantidades de datos (por ejemplo, data mining o natural language processing) conlleva a una mayor eficiencia en obtener resultados en tareas de identificación de patrones."
   },
   {
     "objectID": "biohack-modulo1.html#listas",
@@ -263,7 +263,7 @@
     "href": "biohack-modulo1.html#paquetes-y-librerías-en-r",
     "title": "biohack-modulo1",
     "section": "Paquetes y librerías en R",
-    "text": "Paquetes y librerías en R\n\n\nQuizá hayan escuchado el uso de estos términos como sinónimos. Siendo más técnicos:\n\nPaquete es una colección de funciones de R, datos y código compilado.\nLibrería es el directorio donde un paquete de R ha sido instalado y guardado.\n\nExisten dos tipos de paquetes:\n\nPaquetes de base (instalados como librerías estándar de R, ejemplos: utils y base)\nPaquetes de terceras partes (o externos, todos aquellos disponibles en CRAN)"
+    "text": "Paquetes y librerías en R\n\n\nQuizá hayan escuchado el uso de estos términos como sinónimos. Siendo más técnicos:\n\nPaquete es una colección de funciones de R, datos y código compilado.\nLibrería es el directorio donde un paquete de R ha sido instalado y guardado.\n\nExisten dos tipos de paquetes:\n\nPaquetes de base (instalados como librerías estándar de R, ejemplos: {utils} y {base})\nPaquetes de terceras partes (o externos, todos aquellos disponibles en CRAN)"
   },
   {
     "objectID": "biohack-modulo1.html#instalación-de-paquetes-en-r",
@@ -284,7 +284,7 @@
     "href": "biohack-modulo1.html#instalación-de-rtools-opcional",
     "title": "biohack-modulo1",
     "section": "Instalación de Rtools (opcional)",
-    "text": "Instalación de Rtools (opcional)\nSeguramente a muchos de ustedes al instalar el tidyverse, les apareció un mensaje como el siguiente:\n\n\n\n\n\n\n\n\nRtools es una cadena de herramientas para compilar librerías de R en Windows basada en lenguajes C/C++/Fortran.\nNo es necesario en sistemas operativos de Apple o basados en Unix (Linux).\nSe puede usar R en Windows sin necesidad de Rtools por la existencia de versiones de librerías en formato binario (ya previamente compiladas).\nLas ventajas de contar con Rtools:\n\nPosibilidad de actualizar librerías a sus más recientes versiones.\nCompilación de versiones beta de librerías experimentales aún no disponibles en CRAN.\nUso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. rstan)\n\nEn caso de que desees instalar Rtools, sigue las instrucciones en este link https://cran.r-project.org/bin/windows/Rtools/"
+    "text": "Instalación de Rtools (opcional)\nSeguramente a muchos de ustedes al instalar el {tidyverse}, les apareció un mensaje como el siguiente:\n\n\n\n\n\n\n\nNota\n\n\n\nRtools es una cadena de herramientas para compilar librerías de R en Windows basada en lenguajes C/C++/Fortran.\nNo es necesario en sistemas operativos de Apple o basados en Unix (Linux).\nSe puede usar R en Windows sin necesidad de Rtools por la existencia de versiones de librerías en formato binario (ya previamente compiladas).\nLas ventajas de contar con Rtools:\n\nPosibilidad de actualizar librerías a sus más recientes versiones.\nCompilación de versiones beta de librerías experimentales aún no disponibles en CRAN.\nUso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. {rstan})\n\nEn caso de que desees instalar Rtools, sigue las instrucciones en este link https://cran.r-project.org/bin/windows/Rtools/"
   },
   {
     "objectID": "biohack-modulo1.html#ayuda-en-r",
@@ -368,7 +368,7 @@
     "href": "biohack-modulo1.html#transformación-de-valores-1",
     "title": "biohack-modulo1",
     "section": "Transformación de valores",
-    "text": "Transformación de valores\nFechas\n\n\nLa transformación de caracteres a fechas depende enormemente de los distintos formatos que existen para denotar una y de las unidades que se usan.\nPor tanto, no existe una solución única. Aquí abarcaremos el caso más sencillo en que el formato es YYYY-MM-DD.\nLa función base as.Date abarca una gran diversidad de capacidades para transformar fechas. Sin embargo, su uso puede resultar un poco confuso. En caso de que necesites una solución más específica, recomiendo el paquete lubridate del conjunto de paquetes tidyverse.\n\n\n\nEjemplo as.Date\n\nfechas &lt;- c(\"1985-10-14\", \"2021-12-25\", \"2023-01-01\", \"1999-05-06\", \"1900-01-02\")\nstr(fechas)\n\n chr [1:5] \"1985-10-14\" \"2021-12-25\" \"2023-01-01\" \"1999-05-06\" \"1900-01-02\"\n\nfechas &lt;- as.Date(fechas)\nstr(fechas)\n\n Date[1:5], format: \"1985-10-14\" \"2021-12-25\" \"2023-01-01\" \"1999-05-06\" \"1900-01-02\""
+    "text": "Transformación de valores\nFechas\n\n\nLa transformación de caracteres a fechas depende enormemente de los distintos formatos que existen para denotar una y de las unidades que se usan.\nPor tanto, no existe una solución única. Aquí abarcaremos el caso más sencillo en que el formato es YYYY-MM-DD.\nLa función base as.Date abarca una gran diversidad de capacidades para transformar fechas. Sin embargo, su uso puede resultar un poco confuso. En caso de que necesites una solución más específica, recomiendo el paquete {lubridate} del conjunto de paquetes {tidyverse}.\n\n\n\nEjemplo as.Date\n\nfechas &lt;- c(\"1985-10-14\", \"2021-12-25\", \"2023-01-01\", \"1999-05-06\", \"1900-01-02\")\nstr(fechas)\n\n chr [1:5] \"1985-10-14\" \"2021-12-25\" \"2023-01-01\" \"1999-05-06\" \"1900-01-02\"\n\nfechas &lt;- as.Date(fechas)\nstr(fechas)\n\n Date[1:5], format: \"1985-10-14\" \"2021-12-25\" \"2023-01-01\" \"1999-05-06\" \"1900-01-02\""
   },
   {
     "objectID": "biohack-modulo1.html#accediendo-elementos-específicos-de-objetos",
@@ -459,7 +459,7 @@
     "href": "biohack-modulo1.html#estadísticos-descriptivos-y-tablas-de-frecuencia",
     "title": "biohack-modulo1",
     "section": "Estadísticos descriptivos y tablas de frecuencia",
-    "text": "Estadísticos descriptivos y tablas de frecuencia\n\n\nPara ilustrar esta sección, utilizaremos la base de datos de “Palmer penguins”:\n\nLos datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr. Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería palmerpenguins."
+    "text": "Estadísticos descriptivos y tablas de frecuencia\n\n\nPara ilustrar esta sección, utilizaremos la base de datos de “Palmer penguins”:\n\nLos datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr. Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería {palmerpenguins}."
   },
   {
     "objectID": "biohack-modulo1.html#estadísticos-descriptivos",
@@ -473,7 +473,7 @@
     "href": "biohack-modulo1.html#estadísticos-descriptivos-1",
     "title": "biohack-modulo1",
     "section": "Estadísticos descriptivos",
-    "text": "Estadísticos descriptivos\n\n\nUsar la función summary resulta útil para hacer chequeos sobre la marcha.\nPara obtener una tabla de estadísticos descriptivos más útil en términos de presentación de resultados, usaremos básicamente dos funciones del paquete tidycomm\n\ndescribe: para generar tablas de estadísticos descriptivos de variables cuantitativas\ndescribe_cat: para tablas de estadísticos descriptivos de variables categóricas\n\n\n\n\n\nlibrary(tidycomm)\ndescribe(penguins)\n\n# A tibble: 5 × 15\n  Variable           N Missing      M      SD    Min    Q25    Mdn    Q75    Max\n  &lt;chr&gt;          &lt;int&gt;   &lt;int&gt;  &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n1 bill_length_mm   342       2   43.9   5.46    32.1   39.2   44.4   48.5   59.6\n2 bill_depth_mm    342       2   17.2   1.97    13.1   15.6   17.3   18.7   21.5\n3 flipper_lengt…   342       2  201.   14.1    172    190    197    213    231  \n4 body_mass_g      342       2 4202.  802.    2700   3550   4050   4750   6300  \n5 year             344       0 2008.    0.818 2007   2007   2008   2009   2009  \n# ℹ 5 more variables: Range &lt;dbl&gt;, CI_95_LL &lt;dbl&gt;, CI_95_UL &lt;dbl&gt;,\n#   Skewness &lt;dbl&gt;, Kurtosis &lt;dbl&gt;\n\n\n\n\n\nlibrary(tidycomm)\ndescribe_cat(penguins)\n\n# A tibble: 3 × 6\n  Variable     N Missing Unique Mode   Mode_N\n  &lt;chr&gt;    &lt;int&gt;   &lt;int&gt;  &lt;int&gt; &lt;chr&gt;   &lt;int&gt;\n1 species    344       0      3 Adelie    152\n2 island     344       0      3 Biscoe    168\n3 sex        333      11      3 male      168"
+    "text": "Estadísticos descriptivos\n\n\nUsar la función summary resulta útil para hacer chequeos sobre la marcha.\nPara obtener una tabla de estadísticos descriptivos más útil en términos de presentación de resultados, usaremos básicamente dos funciones del paquete {tidycomm}\n\ndescribe: para generar tablas de estadísticos descriptivos de variables cuantitativas\ndescribe_cat: para tablas de estadísticos descriptivos de variables categóricas\n\n\n\n\n\nlibrary(tidycomm)\ndescribe(penguins)\n\n# A tibble: 5 × 15\n  Variable           N Missing      M      SD    Min    Q25    Mdn    Q75    Max\n  &lt;chr&gt;          &lt;int&gt;   &lt;int&gt;  &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n1 bill_length_mm   342       2   43.9   5.46    32.1   39.2   44.4   48.5   59.6\n2 bill_depth_mm    342       2   17.2   1.97    13.1   15.6   17.3   18.7   21.5\n3 flipper_lengt…   342       2  201.   14.1    172    190    197    213    231  \n4 body_mass_g      342       2 4202.  802.    2700   3550   4050   4750   6300  \n5 year             344       0 2008.    0.818 2007   2007   2008   2009   2009  \n# ℹ 5 more variables: Range &lt;dbl&gt;, CI_95_LL &lt;dbl&gt;, CI_95_UL &lt;dbl&gt;,\n#   Skewness &lt;dbl&gt;, Kurtosis &lt;dbl&gt;\n\n\n\n\n\nlibrary(tidycomm)\ndescribe_cat(penguins)\n\n# A tibble: 3 × 6\n  Variable     N Missing Unique Mode   Mode_N\n  &lt;chr&gt;    &lt;int&gt;   &lt;int&gt;  &lt;int&gt; &lt;chr&gt;   &lt;int&gt;\n1 species    344       0      3 Adelie    152\n2 island     344       0      3 Biscoe    168\n3 sex        333      11      3 male      168"
   },
   {
     "objectID": "biohack-modulo1.html#tablas-de-frecuencia",
@@ -522,7 +522,7 @@
     "href": "biohack-modulo1.html#tablas-de-frecuencia-6",
     "title": "biohack-modulo1",
     "section": "Tablas de frecuencia",
-    "text": "Tablas de frecuencia\n\nCategorizando una variable continua\n\n\ntabla_frec2 &lt;- fdt(body_mass_g, na.rm = T)\ntabla_frec2\n\n Class limits  f   rf rf(%)  cf cf(%)\n  [2673,3042) 11 0.03  3.20  11  3.20\n  [3042,3411) 47 0.14 13.66  58 16.86\n  [3411,3780) 71 0.21 20.64 129 37.50\n  [3780,4149) 53 0.15 15.41 182 52.91\n  [4149,4518) 45 0.13 13.08 227 65.99\n  [4518,4887) 41 0.12 11.92 268 77.91\n  [4887,5256) 28 0.08  8.14 296 86.05\n  [5256,5625) 26 0.08  7.56 322 93.60\n  [5625,5994) 16 0.05  4.65 338 98.26\n  [5994,6363)  4 0.01  1.16 342 99.42\n\n\n\n\nLa librería fdth categoriza una variable continua en base a tres distintos algoritmos. El “default” es el algoritmo “Sturges” (ver ?fdth para más información)."
+    "text": "Tablas de frecuencia\n\nCategorizando una variable continua\n\n\ntabla_frec2 &lt;- fdt(body_mass_g, na.rm = T)\ntabla_frec2\n\n Class limits  f   rf rf(%)  cf cf(%)\n  [2673,3042) 11 0.03  3.20  11  3.20\n  [3042,3411) 47 0.14 13.66  58 16.86\n  [3411,3780) 71 0.21 20.64 129 37.50\n  [3780,4149) 53 0.15 15.41 182 52.91\n  [4149,4518) 45 0.13 13.08 227 65.99\n  [4518,4887) 41 0.12 11.92 268 77.91\n  [4887,5256) 28 0.08  8.14 296 86.05\n  [5256,5625) 26 0.08  7.56 322 93.60\n  [5625,5994) 16 0.05  4.65 338 98.26\n  [5994,6363)  4 0.01  1.16 342 99.42\n\n\n\n\nLa librería {fdth} categoriza una variable continua en base a tres distintos algoritmos. El “default” es el algoritmo “Sturges” (ver ?fdth para más información)."
   },
   {
     "objectID": "biohack-modulo1.html#cómo-exporto-mis-tablas",
@@ -532,73 +532,10 @@
     "text": "¿Cómo exporto mis tablas?\n\n\nExisten varias opciones para exportar tablas a otros formatos (.pdf, .docx, .html)\n\n\n\n\nlibrary(flextable)\nft1 &lt;- flextable(tabla_frec1)\nft2 &lt;- flextable(tabla_frec2[[1]]) # tabla_frec2 es una lista\nsave_as_docx(\"Tabla_1\" = ft1, \"Tabla_2\" = ft2, \n             path = \"C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx\")\ndetach(penguins) # IMPORTANTISIMO!"
   },
   {
-    "objectID": "biohack-modulo1.html#funciones-y-librerías-importantes-de-esta-sesión",
-    "href": "biohack-modulo1.html#funciones-y-librerías-importantes-de-esta-sesión",
+    "objectID": "biohack-modulo1.html#section-4",
+    "href": "biohack-modulo1.html#section-4",
     "title": "biohack-modulo1",
-    "section": "Funciones y librerías importantes de esta sesión",
-    "text": "Funciones y librerías importantes de esta sesión\nFunciones\n\n\ndata.frame nos permite crear una tabla de datos de manera manual.\nstr nos sirve para acceder a la información del tipo de datos contenidos en un objeto de R.\ninstall.packages nos permite instalar paquetes de CRAN en R.\nlibrary nos permite invocar/llamar una librería de R.\n? y help son comandos de ayuda de R.\nfactor nos permite especificar cuando una variable debe ser reconocida como factor y el orden de sus niveles.\nas.numeric, as.character y as.Date transforman valores a numéricos, caracteres y fechas.\nLas funciones mean, sd, var, median y quantile calculan la media aritmética, la desviación estándar, la varianza, la mediana y cuartiles respectivamente.\nattach convierte internamente las columnas de una tabla en objetos para su agilitar su accesibilidad.\ndettach revierte a attach.\n\n\n\nLibrerias\n\n\nmodeest funciones para estimar la moda de una distribución.\n\nmlv función para estimación de la moda de datos continuos.\n\npalmerpenguins datos correspondientes a la investigación de la Dra. Kristen Gorman acerca de pingüinos de la Antártida.\ntidycomm funciones para calcular estadísticos descriptivos.\n\ndescribe crea una tabla de estadísticos descriptivos para variables continuas.\ndescribe_cat crea una tabla de estadísticos descriptivos para variables categóricas.\n\nfdth funciones para crear tablas de frecuencias.\n\nfdt_cat crea una tabla de frecuencia para variables categóricas.\nfdt categoriza una variable continua para crear una tabla de frecuencias.\n\nflextable paquete con funciones para dar formato a tablas y exportarlas a otros tipos de documentos (.docx, .pdf)\n\nflextable principal función para dar formato a una tabla"
-  },
-  {
-    "objectID": "timer_test.html#extension",
-    "href": "timer_test.html#extension",
-    "title": "Quarto Timer",
-    "section": "Extension",
-    "text": "Extension\nThis extension provides two methods to add timers to your slides.\n\nJavaScript\nLUA\n\nThis might be helpful, if, for example, you want your audience to think about a specific topic for 5 minutes."
-  },
-  {
-    "objectID": "timer_test.html#installation",
-    "href": "timer_test.html#installation",
-    "title": "Quarto Timer",
-    "section": "Installation",
-    "text": "Installation\nIn RStudio terminal enter the following to download and add extension to the current project:\n$ quarto add produnis/quarto-timer\n \nGo ahead and do it now. You have 15 seconds."
-  },
-  {
-    "objectID": "timer_test.html#javascript-and-lua-usage",
-    "href": "timer_test.html#javascript-and-lua-usage",
-    "title": "Quarto Timer",
-    "section": "JavaScript and LUA usage",
-    "text": "JavaScript and LUA usage\nFollowing installation you can embed timers into pages in two ways.\n\nJavaScript\nLUA\n\nUsing LUA is generally cleaner in markdown but both methods will be shown."
-  },
-  {
-    "objectID": "timer_test.html#customization",
-    "href": "timer_test.html#customization",
-    "title": "Quarto Timer",
-    "section": "Customization",
-    "text": "Customization\nYou can change two features of timers individually:\n\nHow long they will last\nWhen they will be active:\n\nFrom the start of a presentation\nWhen the slide is visible\nOn interaction, clicking on the timer"
-  },
-  {
-    "objectID": "timer_test.html#javascript-usage",
-    "href": "timer_test.html#javascript-usage",
-    "title": "Quarto Timer",
-    "section": "JavaScript usage",
-    "text": "JavaScript usage\nTo add a timer, add the code snippet into your qmd file:\n&lt;div id=\"UNIQUE-ID\"&gt;&lt;/div&gt;\n&lt;script src=\"_extensions/timer/timer.js\"&gt;&lt;/script&gt;\n&lt;script&gt;\n    document.addEventListener(\"DOMContentLoaded\", function () {\n        initializeTimer(\"UNIQUE-ID\", SECONDS, STARTON); \n    });\n&lt;/script&gt;\nCustomize the UNIQUE-ID, SECONDS, and STARTON, as below:\n&lt;div id=\"Timer0\"&gt;&lt;/div&gt;\n&lt;script src=\"_extensions/timer/timer.js\"&gt;&lt;/script&gt;\n&lt;script&gt;\n    document.addEventListener(\"DOMContentLoaded\", function () {\n        initializeTimer(\"Timer0\", 60, \"slide\"); \n    });\n&lt;/script&gt;"
-  },
-  {
-    "objectID": "timer_test.html#javascript-usage-1",
-    "href": "timer_test.html#javascript-usage-1",
-    "title": "Quarto Timer",
-    "section": "JavaScript usage",
-    "text": "JavaScript usage\nHere’s a working JavaScript example, added with the following code:\n&lt;div id=\"Timer1\"&gt;&lt;/div&gt;\n&lt;script src=\"_extensions/timer/timer.js\"&gt;&lt;/script&gt;\n&lt;script&gt;\n    document.addEventListener(\"DOMContentLoaded\", function () {\n        initializeTimer(\"Timer1\", 240, \"presentation\"); \n    });\n&lt;/script&gt;\n\n\n\n\n\nThis timer started when the presentation started and lasts 4 minutes (240 seconds)."
-  },
-  {
-    "objectID": "timer_test.html#lua-usage",
-    "href": "timer_test.html#lua-usage",
-    "title": "Quarto Timer",
-    "section": "LUA usage",
-    "text": "LUA usage\nAdding a timer with LUA takes the following form:\n::: {.timer #UNIQUE-ID seconds=300 starton=slide}\n:::\nCustomize the UNIQUE-ID and set the seconds and starton.\nNOTE: starton can have the values:\n\npresentation\nslide\ninteraction"
-  },
-  {
-    "objectID": "timer_test.html#lua-example",
-    "href": "timer_test.html#lua-example",
-    "title": "Quarto Timer",
-    "section": "LUA example",
-    "text": "LUA example\nThe default timer can be as simple as the following:\n::: {.timer #Timer2}\n:::\nAppearing as the following:\n                    \n                    \n                \nThe default is 5 minutes (300 seconds) and active only when the slide is in focus."
-  },
-  {
-    "objectID": "timer_test.html#more-lua-examples",
-    "href": "timer_test.html#more-lua-examples",
-    "title": "Quarto Timer",
-    "section": "More LUA examples",
-    "text": "More LUA examples\nYou can use as many timers on your slides as you want, as long as a unique UNIQUE-ID is used for each.\n::: {.timer #Timer3 seconds=60}\n:::\n::: {.timer #Timer4 seconds=60 starton=presentation}\n:::\n::: {.timer #Timer5 seconds=60 starton=interaction}\n:::"
+    "section": "",
+    "text": "Fin del módulo 1\n\n\n\n\n\n\n\nCréditos de fotos\n\n\nPortada por Becomes Co en Unsplash\nFoto final por Wolfgang Hasselmann en Unsplash\nResto de fotos: Varias fuentes"
   }
 ]

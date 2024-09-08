@@ -405,12 +405,8 @@
 <p>Módulo 1: Generalidades e Introducción a R</p>
 </div>
 <p>Mauricio Moreno, PhD</p>
-<div class="callout-link">
-
-</div>
 </div></div>
 <p><img data-src="images/becomes-co-s_FHDDSVp1s-unsplash.jpg" class="image-left"></p>
-<!-- Photo by <a href="https://unsplash.com/@becomes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Becomes Co</a> on <a href="https://unsplash.com/photos/2-men-sitting-on-black-office-rolling-chairs-s_FHDDSVp1s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
 </section>
 <section id="conozcámonos" class="slide level2">
 <h2>¡Conozcámonos!</h2>
@@ -519,8 +515,8 @@
 <li class="fragment"><p>Versátil:</p>
 <ul>
 <li class="fragment"><p>Gráficos listos para publicación.</p></li>
-<li class="fragment"><p>Generación de reportes, páginas web, presentaciones y libros en distintos formatos (rmarkdown, blogdown, quarto).</p></li>
-<li class="fragment"><p>Construcción de aplicaciones interactivas para visualización/análisis de datos (rshiny).</p></li>
+<li class="fragment"><p>Generación de reportes, páginas web, presentaciones y libros en distintos formatos (<code>{rmarkdown}</code>, <code>{blogdown}</code>, Quarto).</p></li>
+<li class="fragment"><p>Construcción de aplicaciones interactivas para visualización/análisis de datos (<code>{rshiny}</code>).</p></li>
 </ul></li>
 <li class="fragment"><p>A continuación, algunos ejemplos de la versatilidad de R.</p></li>
 </ul>
@@ -606,10 +602,13 @@
 <!-- ::: -->
 </div>
 <div class="fragment">
-<div class="callout callout-tip callout-style-simple">
+<div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
+<div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
 <ul>
@@ -636,10 +635,13 @@
 </ol>
 </div>
 <div class="fragment">
-<div class="callout callout-tip callout-style-simple">
+<div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
+<div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
 <p>No cambies las sugerencias pre-establecidas para la instalación</p>
@@ -648,10 +650,13 @@
 </div>
 </div>
 <div class="fragment">
-<div class="callout callout-important callout-style-simple">
+<div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
+<div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
+</div>
+<p><strong>Importante</strong></p>
 </div>
 <div class="callout-content">
 <p>En el caso de tener una versión de R anterior a la previamente instalada, es probable que la primera vez que abramos RStudio, este nos pregunte que version queremos usar (recomendado usar la última versión de R)</p>
@@ -818,7 +823,7 @@
 </tbody>
 </table>
 <ul>
-<li>Existen otros operadores, como el de “cascada” o <em>pipeline operator</em> (en tidyverse: <code>%&gt;%</code>, en R base: <code>|&gt;</code>), que usaremos más adelante</li>
+<li>Existen otros operadores, como el de “cascada” o <em>pipeline operator</em> (en <code>{tidyverse}</code>: <code>%&gt;%</code>, en R base: <code>|&gt;</code>), que usaremos más adelante</li>
 </ul>
 </section>
 <section id="operadores-booleanos-de-comparación" class="slide level2">
@@ -1065,7 +1070,7 @@
 <ul>
 <li class="fragment"><p>Pero entonces, ¿por qué molestarnos con matrices?</p>
 <ul>
-<li class="fragment"><p>Para un usuario principiante, no hace mayor diferencia, a menos que llegue a hacer uso de paquetes de R que requieren que los datos estén en forma matricial (un ejemplo es la librería para gráficos <code>lattice</code>).</p></li>
+<li class="fragment"><p>Para un usuario principiante, no hace mayor diferencia, a menos que llegue a hacer uso de paquetes de R que requieren que los datos estén en forma matricial (un ejemplo es la librería para gráficos <code>{lattice}</code>).</p></li>
 <li class="fragment"><p>Para un usuario avanzado, la mayor ventaja de tener los datos en forma matricial es que iterar y realizar computaciones sobre estas es más rápido (técnica común en lo que se conoce como <strong><em>low-level programming</em></strong>). Esto, en modelos que requieren bastas cantidades de datos (por ejemplo, <strong><em>data mining</em></strong> o <strong><em>natural language processing</em></strong>) conlleva a una mayor eficiencia en obtener resultados en tareas de identificación de patrones.</p></li>
 </ul></li>
 </ul>
@@ -1157,7 +1162,7 @@
 </ul></li>
 <li class="fragment"><p>Existen dos tipos de paquetes:</p>
 <ul>
-<li class="fragment"><p>Paquetes de base (instalados como librerías estándar de R, ejemplos: <code>utils</code> y <code>base</code>)</p></li>
+<li class="fragment"><p>Paquetes de base (instalados como librerías estándar de R, ejemplos: <code>{utils}</code> y <code>{base}</code>)</p></li>
 <li class="fragment"><p>Paquetes de terceras partes (o externos, todos aquellos disponibles en CRAN)</p></li>
 </ul></li>
 </ul>
@@ -1212,12 +1217,15 @@
 </section>
 <section id="instalación-de-rtools-opcional" class="slide level2 smaller">
 <h2>Instalación de Rtools (opcional)</h2>
-<p>Seguramente a muchos de ustedes al instalar el <code>tidyverse</code>, les apareció un mensaje como el siguiente:</p>
+<p>Seguramente a muchos de ustedes al instalar el <code>{tidyverse}</code>, les apareció un mensaje como el siguiente:</p>
 
-<img data-src="images/warning.png" class="r-stretch"><div class="callout callout-note callout-style-simple">
+<img data-src="images/warning.png" class="r-stretch"><div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
+<div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
+</div>
+<p><strong>Nota</strong></p>
 </div>
 <div class="callout-content">
 <ul>
@@ -1228,7 +1236,7 @@
 <ul>
 <li><p>Posibilidad de actualizar librerías a sus más recientes versiones.</p></li>
 <li><p>Compilación de versiones beta de librerías experimentales aún no disponibles en CRAN.</p></li>
-<li><p>Uso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. rstan)</p></li>
+<li><p>Uso de librerías específicas que necesitan de Rtools para su funcionamiento (ej. <code>{rstan}</code>)</p></li>
 </ul></li>
 <li><p>En caso de que desees instalar Rtools, sigue las instrucciones en este link <a href="https://cran.r-project.org/bin/windows/Rtools/" target="_blank">https://cran.r-project.org/bin/windows/Rtools/</a></p></li>
 </ul>
@@ -1528,7 +1536,7 @@
 <ul>
 <li class="fragment"><p>La transformación de caracteres a fechas depende enormemente de los distintos formatos que existen para denotar una y de las unidades que se usan.</p></li>
 <li class="fragment"><p>Por tanto, no existe una solución única. Aquí abarcaremos el caso más sencillo en que el formato es YYYY-MM-DD.</p></li>
-<li class="fragment"><p>La función base <code>as.Date</code> abarca una gran diversidad de capacidades para transformar fechas. Sin embargo, su uso puede resultar un poco confuso. En caso de que necesites una solución más específica, recomiendo el paquete <code>lubridate</code> del conjunto de paquetes <code>tidyverse</code>.</p></li>
+<li class="fragment"><p>La función base <code>as.Date</code> abarca una gran diversidad de capacidades para transformar fechas. Sin embargo, su uso puede resultar un poco confuso. En caso de que necesites una solución más específica, recomiendo el paquete <code>{lubridate}</code> del conjunto de paquetes <code>{tidyverse}</code>.</p></li>
 </ul>
 </div>
 <div class="fragment">
@@ -1941,7 +1949,7 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 <div class="column fragment" style="width:80%;">
 <p>Para ilustrar esta sección, utilizaremos la base de datos de “Palmer penguins”:</p>
 <ul>
-<li>Los datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr.&nbsp;Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería <code>palmerpenguins</code>.</li>
+<li>Los datos de Palmer Penguins fueron recolectados y puestos a disposición del público en general por la Dr.&nbsp;Kristen Gorman (estación Palmer, Antártida) y se encuentran disponibles en la librería <code>{palmerpenguins}</code>.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -2005,7 +2013,7 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 <div>
 <ul>
 <li class="fragment"><p>Usar la función <code>summary</code> resulta útil para hacer chequeos sobre la marcha.</p></li>
-<li class="fragment"><p>Para obtener una tabla de estadísticos descriptivos más útil en términos de presentación de resultados, usaremos básicamente dos funciones del paquete <code>tidycomm</code></p>
+<li class="fragment"><p>Para obtener una tabla de estadísticos descriptivos más útil en términos de presentación de resultados, usaremos básicamente dos funciones del paquete <code>{tidycomm}</code></p>
 <ul>
 <li class="fragment"><p><code>describe</code>: para generar tablas de estadísticos descriptivos de variables cuantitativas</p></li>
 <li class="fragment"><p><code>describe_cat</code>: para tablas de estadísticos descriptivos de variables categóricas</p></li>
@@ -2174,7 +2182,7 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 </div>
 <div>
 <ul>
-<li class="fragment">La librería <code>fdth</code> categoriza una variable continua en base a tres distintos algoritmos. El “default” es el algoritmo “Sturges” (ver <code>?fdth</code> para más información).</li>
+<li class="fragment">La librería <code>{fdth}</code> categoriza una variable continua en base a tres distintos algoritmos. El “default” es el algoritmo “Sturges” (ver <code>?fdth</code> para más información).</li>
 </ul>
 </div>
 </section>
@@ -2201,6 +2209,34 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 <p><img data-src="images/tabla_word.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="title" data-id="title">
+<p>Fin del módulo 1</p>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Créditos de fotos</strong></p>
+</div>
+<div class="callout-content">
+<p>Portada por <a href="https://unsplash.com/@becomes?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Becomes Co</a> en <a href="https://unsplash.com/photos/2-men-sitting-on-black-office-rolling-chairs-s_FHDDSVp1s?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></p>
+<p>Foto final por <a href="https://unsplash.com/@wolfgang_hasselmann?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Wolfgang Hasselmann</a> en <a href="https://unsplash.com/photos/dandelion-flower-under-golden-hour-Kovuf0yU8NU?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></p>
+<p>Resto de fotos: Varias fuentes</p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:37.5%;">
+<p><img data-src="images/icon1_nb.png" style="margin-left:125px"></p>
+</div></div>
+<p><img data-src="images/wolfgang-hasselmann-Kovuf0yU8NU-unsplash.jpg" class="image-right"></p>
 <!-- ## Autoevaluación {.smaller} -->
 <!-- Carga los datos de base `iris` y aparea los siguientes literales -->
 <!-- +-----------------------------------------------------+---------------+ -->
@@ -2216,55 +2252,36 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 <!-- |                                                     |               | -->
 <!-- | f\) Frecuencia acumulada hasta especie `versicolor` | f\) 0.762     | -->
 <!-- +-----------------------------------------------------+---------------+ -->
-</div>
-</section></section>
-<section>
-<section id="antes-de-terminar-este-módulo" class="title-slide slide level1 center">
-<h1>Antes de terminar este módulo…</h1>
-
-</section>
-<section id="funciones-y-librerías-importantes-de-esta-sesión" class="slide level2 smaller scrollable">
-<h2>Funciones y librerías importantes de esta sesión</h2>
-<p><strong>Funciones</strong></p>
-<div>
-<ul>
-<li class="fragment"><p><code>data.frame</code> nos permite crear una tabla de datos de manera manual.</p></li>
-<li class="fragment"><p><code>str</code> nos sirve para acceder a la información del tipo de datos contenidos en un objeto de R.</p></li>
-<li class="fragment"><p><code>install.packages</code> nos permite instalar paquetes de CRAN en R.</p></li>
-<li class="fragment"><p><code>library</code> nos permite invocar/llamar una librería de R.</p></li>
-<li class="fragment"><p><code>?</code> y <code>help</code> son comandos de ayuda de R.</p></li>
-<li class="fragment"><p><code>factor</code> nos permite especificar cuando una variable debe ser reconocida como factor y el orden de sus niveles.</p></li>
-<li class="fragment"><p><code>as.numeric</code>, <code>as.character</code> y <code>as.Date</code> transforman valores a numéricos, caracteres y fechas.</p></li>
-<li class="fragment"><p>Las funciones <code>mean</code>, <code>sd</code>, <code>var</code>, <code>median</code> y <code>quantile</code> calculan la media aritmética, la desviación estándar, la varianza, la mediana y cuartiles respectivamente.</p></li>
-<li class="fragment"><p><code>attach</code> convierte internamente las columnas de una tabla en objetos para su agilitar su accesibilidad.</p></li>
-<li class="fragment"><p><code>dettach</code> revierte a <code>attach</code>.</p></li>
-</ul>
-</div>
-<div class="fragment">
-<p><strong>Librerias</strong></p>
-<div>
-<ul>
-<li class="fragment"><p><code>modeest</code> funciones para estimar la moda de una distribución.</p>
-<ul>
-<li class="fragment"><code>mlv</code> función para estimación de la moda de datos continuos.</li>
-</ul></li>
-<li class="fragment"><p><code>palmerpenguins</code> datos correspondientes a la investigación de la Dra. Kristen Gorman acerca de pingüinos de la Antártida.</p></li>
-<li class="fragment"><p><code>tidycomm</code> funciones para calcular estadísticos descriptivos.</p>
-<ul>
-<li class="fragment"><p><code>describe</code> crea una tabla de estadísticos descriptivos para variables continuas.</p></li>
-<li class="fragment"><p><code>describe_cat</code> crea una tabla de estadísticos descriptivos para variables categóricas.</p></li>
-</ul></li>
-<li class="fragment"><p><code>fdth</code> funciones para crear tablas de frecuencias.</p>
-<ul>
-<li class="fragment"><p><code>fdt_cat</code> crea una tabla de frecuencia para variables categóricas.</p></li>
-<li class="fragment"><p><code>fdt</code> categoriza una variable continua para crear una tabla de frecuencias.</p></li>
-</ul></li>
-<li class="fragment"><p><code>flextable</code> paquete con funciones para dar formato a tablas y exportarlas a otros tipos de documentos (.docx, .pdf)</p>
-<ul>
-<li class="fragment"><code>flextable</code> principal función para dar formato a una tabla</li>
-</ul></li>
-</ul>
-</div>
+<!-- # Antes de terminar este módulo... -->
+<!-- ## Funciones y librerías importantes de esta sesión {.smaller .scrollable} -->
+<!-- **Funciones** -->
+<!-- ::: incremental -->
+<!-- -   `data.frame` nos permite crear una tabla de datos de manera manual. -->
+<!-- -   `str` nos sirve para acceder a la información del tipo de datos contenidos en un objeto de R. -->
+<!-- -   `install.packages` nos permite instalar paquetes de CRAN en R. -->
+<!-- -   `library` nos permite invocar/llamar una librería de R. -->
+<!-- -   `?` y `help` son comandos de ayuda de R. -->
+<!-- -   `factor` nos permite especificar cuando una variable debe ser reconocida como factor y el orden de sus niveles. -->
+<!-- -   `as.numeric`, `as.character` y `as.Date` transforman valores a numéricos, caracteres y fechas. -->
+<!-- -   Las funciones `mean`, `sd`, `var`, `median` y `quantile` calculan la media aritmética, la desviación estándar, la varianza, la mediana y cuartiles respectivamente. -->
+<!-- -   `attach` convierte internamente las columnas de una tabla en objetos para su agilitar su accesibilidad. -->
+<!-- -   `dettach` revierte a `attach`. -->
+<!-- ::: -->
+<!-- . . . -->
+<!-- **Librerias** -->
+<!-- ::: incremental -->
+<!-- -   `modeest` funciones para estimar la moda de una distribución. -->
+<!--     -   `mlv` función para estimación de la moda de datos continuos. -->
+<!-- -   `palmerpenguins` datos correspondientes a la investigación de la Dra. Kristen Gorman acerca de pingüinos de la Antártida. -->
+<!-- -   `tidycomm` funciones para calcular estadísticos descriptivos. -->
+<!--     -   `describe` crea una tabla de estadísticos descriptivos para variables continuas. -->
+<!--     -   `describe_cat` crea una tabla de estadísticos descriptivos para variables categóricas. -->
+<!-- -   `fdth` funciones para crear tablas de frecuencias. -->
+<!--     -   `fdt_cat` crea una tabla de frecuencia para variables categóricas. -->
+<!--     -   `fdt` categoriza una variable continua para crear una tabla de frecuencias. -->
+<!-- -   `flextable` paquete con funciones para dar formato a tablas y exportarlas a otros tipos de documentos (.docx, .pdf) -->
+<!--     -   `flextable` principal función para dar formato a una tabla -->
+<!-- ::: -->
 <!-- ## Recomendaciones generales (i) {.smaller} -->
 <!-- ::: incremental -->
 <!-- -   ¿Recuerdan qué aconsejé no instalar las traducciones de los mensajes de R? -->
@@ -2291,7 +2308,6 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 <p><img src="images/icon1_nb.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
-</div>
 </div>
 </div>
 </section></section>
