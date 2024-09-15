@@ -26,6 +26,7 @@ format:
       buttons: false
     revealjs-plugins:
       - pointer
+      - drop
       
 # callout-appearance: simple
 ---
@@ -882,13 +883,12 @@ d
     -   Si las pruebas estadísticas que realicemos requieren especificar un nivel como referencia.
 :::
 
-## Creación de factores {visibility="uncounted"}
+## Creación de factores {visibility="uncounted" .smaller}
 
 **Factor ordenado alfabéticamente**
 
 ```{r echo=T, eval=T, error=T}
 #| include: true
-#| code-line-numbers: "1|2|3"
 variable_factor_1 <- c("A", "A", "B", "C", "C", "C")
 variable_factor_1 <- factor(variable_factor_1)
 str(variable_factor_1)
@@ -902,9 +902,19 @@ str(variable_factor_1)
 
 ```{r echo=T, eval=T, error=T}
 #| include: true
-#| code-line-numbers: "1|2|3"
 variable_factor_2 <- c("Tr.A", "Tr.A", "Tr.B", "Control", "Control", "Control")
 variable_factor_2 <- factor(variable_factor_2, levels = c("Control", "Tr.A", "Tr.B"))
+str(variable_factor_2)
+```
+
+. . .
+
+Si tuviésemos muchos niveles del factor, y solo estamos interesados en que uno de ellos sea la referencia:
+
+```{r echo=T, eval=T, error=T}
+#| include: true
+variable_factor_2 <- c("Tr.A", "Tr.A", "Tr.B", "Control", "Control", "Control")
+variable_factor_2 <- relevel(factor(variable_factor_2), ref = "Tr.A")
 str(variable_factor_2)
 ```
 
