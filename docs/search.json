@@ -529,7 +529,7 @@
     "href": "biohack-modulo1.html#cómo-exporto-mis-tablas",
     "title": "biohack-modulo1",
     "section": "¿Cómo exporto mis tablas?",
-    "text": "¿Cómo exporto mis tablas?\n\n\nExisten varias opciones para exportar tablas a otros formatos (.pdf, .docx, .html)\n\n\n\n\nlibrary(flextable)\nft1 &lt;- flextable(tabla_frec1)\nft2 &lt;- flextable(tabla_frec2[[1]]) # tabla_frec2 es una lista\nsave_as_docx(\"Tabla_1\" = ft1, \"Tabla_2\" = ft2, \n             path = \"C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx\")\ndetach(penguins) # IMPORTANTISIMO!"
+    "text": "¿Cómo exporto mis tablas?\n\n\nExisten varias opciones para exportar tablas a otros formatos (.pdf, .docx, .html)\n\n\n\n\nlibrary(flextable)\nft1 &lt;- flextable(tabla_frec1)\nft1 &lt;- autofit(ft1)\nft2 &lt;- flextable(tabla_frec2[[1]]) # tabla_frec2 es una lista\nft2 &lt;- autofit(ft2)\nsave_as_docx(\"Tabla_1\" = ft1, \"Tabla_2\" = ft2, \n             path = \"C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx\")\ndetach(penguins) # IMPORTANTISIMO!"
   },
   {
     "objectID": "biohack-modulo1.html#section-4",

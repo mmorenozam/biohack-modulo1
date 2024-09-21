@@ -1458,7 +1458,9 @@ tabla_frec2
 #| code-line-numbers: "1|2|3|4|5|6"
 library(flextable)
 ft1 <- flextable(tabla_frec1)
+ft1 <- autofit(ft1)
 ft2 <- flextable(tabla_frec2[[1]]) # tabla_frec2 es una lista
+ft2 <- autofit(ft2)
 save_as_docx("Tabla_1" = ft1, "Tabla_2" = ft2, 
              path = "C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx")
 detach(penguins) # IMPORTANTISIMO!

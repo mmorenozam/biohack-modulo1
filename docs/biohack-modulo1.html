@@ -2209,10 +2209,12 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 <div class="cell">
 <div class="sourceCode cell-code" id="cb115" data-code-line-numbers="1|2|3|4|5|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a></a><span class="fu">library</span>(flextable)</span>
 <span id="cb115-2"><a></a>ft1 <span class="ot">&lt;-</span> <span class="fu">flextable</span>(tabla_frec1)</span>
-<span id="cb115-3"><a></a>ft2 <span class="ot">&lt;-</span> <span class="fu">flextable</span>(tabla_frec2[[<span class="dv">1</span>]]) <span class="co"># tabla_frec2 es una lista</span></span>
-<span id="cb115-4"><a></a><span class="fu">save_as_docx</span>(<span class="st">"Tabla_1"</span> <span class="ot">=</span> ft1, <span class="st">"Tabla_2"</span> <span class="ot">=</span> ft2, </span>
-<span id="cb115-5"><a></a>             <span class="at">path =</span> <span class="st">"C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx"</span>)</span>
-<span id="cb115-6"><a></a><span class="fu">detach</span>(penguins) <span class="co"># IMPORTANTISIMO!</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb115-3"><a></a>ft1 <span class="ot">&lt;-</span> <span class="fu">autofit</span>(ft1)</span>
+<span id="cb115-4"><a></a>ft2 <span class="ot">&lt;-</span> <span class="fu">flextable</span>(tabla_frec2[[<span class="dv">1</span>]]) <span class="co"># tabla_frec2 es una lista</span></span>
+<span id="cb115-5"><a></a>ft2 <span class="ot">&lt;-</span> <span class="fu">autofit</span>(ft2)</span>
+<span id="cb115-6"><a></a><span class="fu">save_as_docx</span>(<span class="st">"Tabla_1"</span> <span class="ot">=</span> ft1, <span class="st">"Tabla_2"</span> <span class="ot">=</span> ft2, </span>
+<span id="cb115-7"><a></a>             <span class="at">path =</span> <span class="st">"C:/Users/mmore/Documents/cursos_uce_2023/est-apl-uce-2023/datos/tablas.docx"</span>)</span>
+<span id="cb115-8"><a></a><span class="fu">detach</span>(penguins) <span class="co"># IMPORTANTISIMO!</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
