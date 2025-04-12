@@ -82,7 +82,9 @@ Ingresa al menti [haciendo click aquí](https://www.menti.com/al9tta2eux8r){targ
 
 ::: incremental
 
--   Toda la información del curso está disponible en la [página web del mismo](https://mmorenozam.github.io/biohack-website/){target="_blank"}
+<!-- -   Toda la información del curso está disponible en la [página web del mismo](https://mmorenozam.github.io/biohack-website/){target="_blank"} -->
+
+-   Toda la información del curso está disponible en [su página web](https://mmorenozam.github.io/biohack_progR/){target="_blank"}
 
 -   En ella, pondré a tu disposición a lo largo de las siguientes semanas:
 
@@ -136,7 +138,7 @@ Ingresa al menti [haciendo click aquí](https://www.menti.com/al9tta2eux8r){targ
 
 -   Software libre.
 
--   Amplio abanico de paquetes/librerías (21201 al 01.09.2024).
+-   Amplio abanico de paquetes/librerías (22313 al 12.04.2025).
 
 -   ¡Basta comunidad de R enthusiasts!.
 
@@ -353,9 +355,10 @@ y <- 0
 
 -   En el caso de que el nombre de la columna empiece con un número, R asigna caracteres para evitar errores. Ejemplo: si en un archivo de Excel tenemos por nombre de columna `1glucosa`, R lo importa como `X.1glucosa`
 
--   El nombre de la columna de un archivo importado puede contener espacios vacíos, sin embargo su accesso en R requiere de una sintaxis especial. Por tanto, es aconsejable usar caracteres como `_` ó `-` cuando deseemos contar con espacios en nuestros archivos a importar.
+-   En la medida de lo posible, es preferible evitar contener espacios vacíos en los nombres ya sea de objetos dentro de R o de columnas a importar de una tabla. En lugar de espacios, podemos usar `_` ó `-`.
 
--   Dentro del ambiente de R, es aconsejable evitar espacios vacíos (se los puede usar, pero igualmente, se requiere de sintaxis especial para referirnos a esos objetos).
+-   Sin embargo, mediante sintaxis especial, es posible tener espacios vacíos:
+
 :::
 
 . . .
@@ -759,6 +762,8 @@ help(package = "ggplot2")
     -   [STHDA](http://www.sthda.com/english/){target="_blank"}
 
     -   Google
+
+-   Y por supuesto, inteligencia artificial (ChatGPT, deepseek, etc).
 :::
 
 ## {}
@@ -772,7 +777,7 @@ help(package = "ggplot2")
 ::: {.column width="60%"}
 
 ::: {.title data-id="title"}
-[Ejercicios 1.1](https://mmorenozam.github.io/biohack-website/ejercicios_m1.html#ejercicios-1.1){target="_blank"}
+[Ejercicios 1.1](https://mmorenozam.github.io/biohack_progR/ejercicios_m1.html#ejercicios-1.1){target="_blank"}
 :::
 
 
@@ -1100,7 +1105,7 @@ ej_lista[[2]]
 ::: {.column width="60%"}
 
 ::: {.title data-id="title"}
-[Ejercicios 1.2](https://mmorenozam.github.io/biohack-website/ejercicios_m1.html#ejercicios-1.2){target="_blank"}
+[Ejercicios 1.2](https://mmorenozam.github.io/biohack_progR/ejercicios_m1.html#ejercicios-1.2){target="_blank"}
 :::
 
 :::{.timer #Timer2 seconds=240 starton=interaction}
@@ -1272,7 +1277,7 @@ sd(mtcars$mpg)/mean(mtcars$mpg)
 ::: {.column width="60%"}
 
 ::: {.title data-id="title"}
-[Ejercicios 1.3](https://mmorenozam.github.io/biohack-website/ejercicios_m1.html#ejercicios-1.3){target="_blank"}
+[Ejercicios 1.3](https://mmorenozam.github.io/biohack_progR/ejercicios_m1.html#ejercicios-1.3){target="_blank"}
 :::
 
 

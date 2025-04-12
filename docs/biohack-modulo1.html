@@ -428,8 +428,9 @@
 <section id="acerca-del-curso" class="slide level2">
 <h2>Acerca del curso</h2>
 <div>
+<!-- -   Toda la información del curso está disponible en la [página web del mismo](https://mmorenozam.github.io/biohack-website/){target="_blank"} -->
 <ul>
-<li class="fragment"><p>Toda la información del curso está disponible en la <a href="https://mmorenozam.github.io/biohack-website/" target="_blank">página web del mismo</a></p></li>
+<li class="fragment"><p>Toda la información del curso está disponible en <a href="https://mmorenozam.github.io/biohack_progR/" target="_blank">su página web</a></p></li>
 <li class="fragment"><p>En ella, pondré a tu disposición a lo largo de las siguientes semanas:</p>
 <ul>
 <li class="fragment">las presentaciones de los distintos módulos,</li>
@@ -511,7 +512,7 @@
 <ul>
 <li class="fragment"><p>Su uso se va extendiendo cada vez más en el ámbito académico (e industrial).</p></li>
 <li class="fragment"><p>Software libre.</p></li>
-<li class="fragment"><p>Amplio abanico de paquetes/librerías (21201 al 01.09.2024).</p></li>
+<li class="fragment"><p>Amplio abanico de paquetes/librerías (22313 al 12.04.2025).</p></li>
 <li class="fragment"><p>¡Basta comunidad de R enthusiasts!.</p></li>
 <li class="fragment"><p>Versátil:</p>
 <ul>
@@ -743,8 +744,8 @@
 <ul>
 <li class="fragment"><p>Al importar tablas, R asigna el valor de la primera fila de cada columna como su nombre.</p></li>
 <li class="fragment"><p>En el caso de que el nombre de la columna empiece con un número, R asigna caracteres para evitar errores. Ejemplo: si en un archivo de Excel tenemos por nombre de columna <code>1glucosa</code>, R lo importa como <code>X.1glucosa</code></p></li>
-<li class="fragment"><p>El nombre de la columna de un archivo importado puede contener espacios vacíos, sin embargo su accesso en R requiere de una sintaxis especial. Por tanto, es aconsejable usar caracteres como <code>_</code> ó <code>-</code> cuando deseemos contar con espacios en nuestros archivos a importar.</p></li>
-<li class="fragment"><p>Dentro del ambiente de R, es aconsejable evitar espacios vacíos (se los puede usar, pero igualmente, se requiere de sintaxis especial para referirnos a esos objetos).</p></li>
+<li class="fragment"><p>En la medida de lo posible, es preferible evitar contener espacios vacíos en los nombres ya sea de objetos dentro de R o de columnas a importar de una tabla. En lugar de espacios, podemos usar <code>_</code> ó <code>-</code>.</p></li>
+<li class="fragment"><p>Sin embargo, mediante sintaxis especial, es posible tener espacios vacíos:</p></li>
 </ul>
 </div>
 <div class="fragment">
@@ -1304,6 +1305,7 @@
 <li class="fragment"><p><a href="http://www.sthda.com/english/" target="_blank">STHDA</a></p></li>
 <li class="fragment"><p>Google</p></li>
 </ul></li>
+<li class="fragment"><p>Y por supuesto, inteligencia artificial (ChatGPT, deepseek, etc).</p></li>
 </ul>
 </div>
 </section>
@@ -1314,7 +1316,7 @@
 
 </div><div class="column" style="width:60%;">
 <div class="title" data-id="title">
-<p><a href="https://mmorenozam.github.io/biohack-website/ejercicios_m1.html#ejercicios-1.1" target="_blank">Ejercicios 1.1</a></p>
+<p><a href="https://mmorenozam.github.io/biohack_progR/ejercicios_m1.html#ejercicios-1.1" target="_blank">Ejercicios 1.1</a></p>
 </div>
                     <div id="Timer1"></div>
                     <script>
@@ -2039,7 +2041,7 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 15
   Variable           N Missing      M      SD    Min    Q25    Mdn    Q75    Max
-  &lt;chr&gt;          &lt;int&gt;   &lt;int&gt;  &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+* &lt;chr&gt;          &lt;int&gt;   &lt;int&gt;  &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
 1 bill_length_mm   342       2   43.9   5.46    32.1   39.2   44.4   48.5   59.6
 2 bill_depth_mm    342       2   17.2   1.97    13.1   15.6   17.3   18.7   21.5
 3 flipper_lengt…   342       2  201.   14.1    172    190    197    213    231  
@@ -2057,10 +2059,10 @@ s^2 = \frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 6
   Variable     N Missing Unique Mode   Mode_N
-  &lt;chr&gt;    &lt;int&gt;   &lt;int&gt;  &lt;int&gt; &lt;chr&gt;   &lt;int&gt;
+* &lt;chr&gt;    &lt;int&gt;   &lt;int&gt;  &lt;dbl&gt; &lt;chr&gt;   &lt;int&gt;
 1 species    344       0      3 Adelie    152
 2 island     344       0      3 Biscoe    168
-3 sex        333      11      3 male      168</code></pre>
+3 sex        333      11      2 male      168</code></pre>
 </div>
 </div>
 </div>
